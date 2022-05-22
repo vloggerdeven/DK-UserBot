@@ -31,7 +31,7 @@ LOGS = logging.getLogger(__name__)
 
 BTN_URL_REGEX = re.compile(r"(\[([^\[]+?)\]\<buttonurl:(?:/{0,2})(.+?)(:same)?\>)")
 MEDIA_PATH_REGEX = re.compile(r"(:?\<\bmedia:(:?(?:.*?)+)\>)")
-CATLOGO = "https://telegra.ph/file/493268c1f5ebedc967eba.jpg"
+CATLOGO = "https://telegra.ph/%F0%9D%98%BF%F0%9D%99%86-05-22"
 tr = Config.COMMAND_HAND_LER
 
 
@@ -251,7 +251,7 @@ async def inline_handler(event):  # sourcery no-metrics
         match2 = re.findall(inf, query)
         hid = re.compile("hide (.*)")
         match3 = re.findall(hid, query)
-        if query.startswith("**Catuserbot"):
+        if query.startswith("**𝘿𝙆 𝙎𝙀𝘾𝙐𝙍𝙀𝘿 𝙐𝘽"):
             buttons = [
                 (
                     Button.inline("𝖲𝗍𝖺𝗍𝗌", data="stats"),
