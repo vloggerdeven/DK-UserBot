@@ -54,8 +54,8 @@ def ibuild_keyboard(buttons):
 
 
 def main_menu():
-    text = f"𝗖𝗮𝘁𝗨𝘀𝗲𝗿𝗯𝗼𝘁 𝗛𝗲𝗹𝗽𝗲𝗿\
-        \n𝗣𝗿𝗼𝘃𝗶𝗱𝗲𝗱 𝗯𝘆 {mention}"
+    text = f"𝖣𝖪 𝖲𝖾𝖼𝗎𝗋𝖾𝖽 𝖴𝖡\
+        \n𝖥𝗈𝗋 {mention}"
     if Config.BADCAT:
         buttons = [
             (Button.inline("ℹ️ Info", data="check"),),
@@ -254,8 +254,8 @@ async def inline_handler(event):  # sourcery no-metrics
         if query.startswith("**Catuserbot"):
             buttons = [
                 (
-                    Button.inline("Stats", data="stats"),
-                    Button.url("Repo", "https://github.com/TgCatUB/catuserbot"),
+                    Button.inline("𝖲𝗍𝖺𝗍𝗌", data="stats"),
+                    Button.url("𝖴𝗉𝖽𝖺𝗍𝖾𝗌", "https://t.me/dk_botx"),
                 )
             ]
             ALIVE_PIC = gvarstatus("ALIVE_PIC")
@@ -605,10 +605,10 @@ async def inline_handler(event):  # sourcery no-metrics
     else:
         buttons = [
             (
-                Button.url("Source code", "https://github.com/TgCatUB/catuserbot"),
+                Button.url("𝖴𝗉𝖽𝖺𝗍𝖾𝗌", "https://t.me/dk_botx"),
                 Button.url(
-                    "Deploy",
-                    "https://github.com/TgCatUB/nekopack",
+                    "𝖲𝗎𝗉𝗉𝗈𝗋𝗍",
+                    "https://t.me/dkbotxchats",
                 ),
             )
         ]
@@ -617,14 +617,14 @@ async def inline_handler(event):  # sourcery no-metrics
             url=CATLOGO, size=0, mime_type="image/jpeg", attributes=[]
         )
         text, msg_entities = await event.client._parse_message_text(
-            "𝗗𝗲𝗽𝗹𝗼𝘆 𝘆𝗼𝘂𝗿 𝗼𝘄𝗻 𝗖𝗮𝘁𝗨𝘀𝗲𝗿𝗯𝗼𝘁.", "md"
+            "𝙀𝙣𝙩𝙝𝙖 𝙈𝙤𝙬𝙣𝙤𝙤𝙨𝙚 𝙉𝙤𝙠𝙖𝙣𝙚", "md"
         )
         result = types.InputBotInlineResult(
             id=str(uuid4()),
             type="photo",
-            title="𝘾𝙖𝙩𝙐𝙨𝙚𝙧𝙗𝙤𝙩",
-            description="Deploy yourself",
-            url="https://github.com/TgCatUB/catuserbot",
+            title="𝘿𝙆 𝙎𝙀𝘾𝙐𝙍𝙀𝘿 𝙐𝘽",
+            description="𝘠𝘖𝘜𝘙𝘚 𝘖𝘕𝘓𝘠",
+            url="https://t.me/dk_secured_userbot",
             thumb=photo,
             content=photo,
             send_message=types.InputBotInlineMessageMediaAuto(
