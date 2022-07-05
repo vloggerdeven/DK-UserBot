@@ -107,10 +107,10 @@ async def bot_start(event):
             start_msg = f"Hey! 👤{mention},\
                         \nI am {my_mention}'s assistant bot.\
                         \nYou can contact to my master from here.\
-                        \n\nPowered by [DK BOTx](https://t.me/dkbotx)"
+                        \n\nPowered by [DK BOTx](https://t.me/dk_botx)"
         buttons = [
             (
-                Button.url("Dev", "https://t.me/vloggerdeven_TG"),
+                Button.url("Dev", "https://t.me/aboutme_DK"),
                 Button.url(
                     "Support",
                     "https://t.me/dkbotxchats",
